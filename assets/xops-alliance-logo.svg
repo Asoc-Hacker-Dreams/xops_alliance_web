@@ -1,0 +1,31 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">X-Ops Alliance logo</title>
+  <desc id="desc">A connected X-shaped symbol representing independent communities joining through a neutral alliance.</desc>
+  <defs>
+    <linearGradient id="g" x1="88" y1="44" x2="386" y2="362" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.36 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="36" fill="#071014"/>
+  <g filter="url(#glow)">
+    <path d="M106 91C154 91 184 134 218 168C253 134 283 91 331 91C359 91 380 112 380 140C380 188 337 218 303 252C337 286 380 316 380 364C380 392 359 413 331 413C283 413 253 370 218 336C184 370 154 413 106 413C78 413 57 392 57 364C57 316 100 286 134 252C100 218 57 188 57 140C57 112 78 91 106 91Z" transform="translate(0 -42)" stroke="url(#g)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="218" cy="210" r="22" fill="#071014" stroke="#FACC15" stroke-width="11"/>
+    <circle cx="106" cy="98" r="11" fill="#22D3EE"/>
+    <circle cx="331" cy="98" r="11" fill="#F97316"/>
+    <circle cx="106" cy="322" r="11" fill="#2563EB"/>
+    <circle cx="331" cy="322" r="11" fill="#FACC15"/>
+  </g>
+  <g transform="translate(470 126)">
+    <text x="0" y="76" fill="#F5FBFF" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-4">X-Ops</text>
+    <text x="4" y="146" fill="#A8BBC6" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="15">ALLIANCE</text>
+    <path d="M0 179H530" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+    <text x="4" y="224" fill="#A8BBC6" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500">Independent communities. Shared impact.</text>
+  </g>
+</svg>
