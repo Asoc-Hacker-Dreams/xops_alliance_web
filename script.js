@@ -9,7 +9,9 @@ function setLanguage(lang) {
   elements.forEach(function (el) {
     el.textContent = el.getAttribute('data-' + lang);
   });
-  const labels = lang === 'en' ? ['About', 'Communities', 'Model', 'Join'] : ['Acerca', 'Comunidades', 'Modelo', 'Unirse'];
+  const labels = lang === 'en'
+    ? ['About', 'Communities', 'Conferences', 'Infrastructure', 'Join']
+    : ['Acerca', 'Comunidades', 'Conferencias', 'Infraestructura', 'Unirse'];
   navLinks.forEach(function (link, index) {
     if (labels[index]) link.textContent = labels[index];
   });
