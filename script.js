@@ -1,4 +1,4 @@
-let currentLang = 'en';
+let currentLang = 'es';
 const langBtn = document.getElementById('langBtn');
 const elements = document.querySelectorAll('[data-en][data-es]');
 const navLinks = document.querySelectorAll('.nav nav a');
