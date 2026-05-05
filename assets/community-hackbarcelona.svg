@@ -1,0 +1,19 @@
+<svg width="720" height="240" viewBox="0 0 720 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HackBarcelona community logo</title>
+  <desc id="desc">Vector community badge for HackBarcelona in the X-Ops Alliance website.</desc>
+  <defs>
+    <linearGradient id="g" x1="36" y1="28" x2="208" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="240" rx="34" fill="#071014"/>
+  <g transform="translate(42 38)">
+    <rect x="0" y="0" width="164" height="164" rx="42" fill="url(#g)" opacity="0.95"/>
+    <path d="M44 48V116M120 48V116M44 82H120" stroke="white" stroke-width="17" stroke-linecap="round"/>
+    <path d="M82 34L82 130" stroke="#071014" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <text x="238" y="102" fill="#F5FBFF" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="850" letter-spacing="-2">HackBarcelona</text>
+  <text x="242" y="151" fill="#A8BBC6" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">FOUNDING COMMUNITY</text>
+</svg>
