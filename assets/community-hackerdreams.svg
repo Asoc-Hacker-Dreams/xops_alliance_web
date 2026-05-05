@@ -1,0 +1,19 @@
+<svg width="720" height="240" viewBox="0 0 720 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HackerDreams community logo</title>
+  <desc id="desc">Vector community badge for HackerDreams in the X-Ops Alliance website.</desc>
+  <defs>
+    <linearGradient id="g" x1="36" y1="28" x2="208" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FACC15"/>
+      <stop offset="0.48" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="240" rx="34" fill="#071014"/>
+  <g transform="translate(42 38)">
+    <rect x="0" y="0" width="164" height="164" rx="42" fill="url(#g)" opacity="0.95"/>
+    <path d="M42 53C60 35 104 35 122 53C140 71 140 109 122 127C104 145 60 145 42 127C24 109 24 71 42 53Z" stroke="white" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M58 82H106M82 58V106" stroke="#071014" stroke-width="10" stroke-linecap="round" opacity="0.72"/>
+  </g>
+  <text x="238" y="102" fill="#F5FBFF" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="850" letter-spacing="-2">HackerDreams</text>
+  <text x="242" y="151" fill="#A8BBC6" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">FOUNDING COMMUNITY</text>
+</svg>
