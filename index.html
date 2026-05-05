@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>X-Ops Alliance | Independent Tech Communities and Conferences</title>
-  <meta name="description" content="X-Ops Alliance is a neutral coordination layer for independent tech communities, initiatives and conferences. Founding communities include HackBarcelona and HackerDreams." />
+  <title>X-Ops Alliance | Independent Tech Communities, Conferences and Ecosystem Infrastructure</title>
+  <meta name="description" content="X-Ops Alliance is a neutral coordination layer for independent tech communities, initiatives and conferences. Founding communities include HackBarcelona, HackerDreams and Valkyrias." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="X-Ops Alliance" />
   <meta name="theme-color" content="#071014" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="X-Ops Alliance | Independent communities. Shared impact." />
-  <meta property="og:description" content="A neutral coordination layer for independent tech communities, initiatives and conferences." />
+  <meta property="og:description" content="A neutral coordination layer for independent tech communities, initiatives, conferences and optional ecosystem infrastructure." />
   <meta property="og:image" content="assets/xops-alliance-logo.svg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="X-Ops Alliance" />
@@ -22,8 +22,9 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "X-Ops Alliance",
-    "description": "X-Ops Alliance is a neutral coordination layer for independent technical communities, initiatives and conferences.",
+    "description": "X-Ops Alliance is a neutral coordination layer for independent technical communities, initiatives, conferences and optional ecosystem infrastructure.",
     "slogan": "Independent communities. Shared impact.",
+    "email": "comunicaciones@hsm.foundation",
     "url": "https://github.com/Asoc-Hacker-Dreams/xops_alliance_web",
     "logo": "assets/xops-alliance-logo.svg",
     "member": [
@@ -31,13 +32,33 @@
         "@type": "Organization",
         "name": "HackBarcelona",
         "url": "https://hackbcn.org",
+        "logo": "assets/community-hackbarcelona.svg",
         "description": "Founding community of X-Ops Alliance based in Barcelona."
       },
       {
         "@type": "Organization",
         "name": "HackerDreams",
         "url": "https://hackerdreams.org",
-        "description": "Founding community and ecosystem facilitator of X-Ops Alliance."
+        "logo": "assets/community-hackerdreams.svg",
+        "description": "Founding community and initial ecosystem facilitator of X-Ops Alliance."
+      },
+      {
+        "@type": "Organization",
+        "name": "Valkyrias",
+        "logo": "assets/community-valkyrias.svg",
+        "description": "Founding community of X-Ops Alliance focused on participation, inclusion and technical community growth."
+      }
+    ],
+    "event": [
+      {
+        "@type": "Event",
+        "name": "HackBCN Conference",
+        "url": "https://hackbcn.org",
+        "organizer": {
+          "@type": "Organization",
+          "name": "HackBarcelona",
+          "url": "https://hackbcn.org"
+        }
       }
     ],
     "knowsAbout": [
@@ -47,6 +68,8 @@
       "Cybersecurity communities",
       "Tech communities",
       "Technology conferences",
+      "Digital identity",
+      "Secure onboarding",
       "Community coordination"
     ]
   }
@@ -55,7 +78,7 @@
 <body>
 <header class="nav">
   <a class="brand" href="#top" aria-label="X-Ops Alliance home"><img src="assets/favicon.svg" alt=""/><span>X-Ops Alliance</span></a>
-  <nav aria-label="Primary navigation"><a href="#about">About</a><a href="#communities">Communities</a><a href="#model">Model</a><a href="#join">Join</a><button id="langBtn" type="button" aria-label="Change language">ES</button></nav>
+  <nav aria-label="Primary navigation"><a href="#about">About</a><a href="#communities">Communities</a><a href="#conferences">Conferences</a><a href="#infrastructure">Infrastructure</a><a href="#join">Join</a><button id="langBtn" type="button" aria-label="Change language">ES</button></nav>
 </header>
 <main id="top">
   <section class="hero" aria-labelledby="hero-title">
@@ -83,25 +106,51 @@
     <div class="community-grid" itemscope itemtype="https://schema.org/ItemList">
       <meta itemprop="name" content="X-Ops Alliance member communities" />
       <article class="community-card featured" itemprop="itemListElement" itemscope itemtype="https://schema.org/Organization">
-        <div class="community-top"><span class="community-avatar" aria-hidden="true">HB</span><span class="badge" data-en="Founding community" data-es="Comunidad fundadora">Founding community</span></div>
+        <div class="logo-frame"><img itemprop="logo" src="assets/community-hackbarcelona.svg" alt="HackBarcelona logo" loading="lazy" /></div>
+        <div class="community-top"><span class="badge" data-en="Founding community" data-es="Comunidad fundadora">Founding community</span></div>
         <h3 itemprop="name">HackBarcelona</h3>
         <p itemprop="description" data-en="Barcelona-based technical community and founding member of X-Ops Alliance, helping connect local talent, events and collaborative initiatives." data-es="Comunidad técnica con base en Barcelona y miembro fundador de X-Ops Alliance, ayudando a conectar talento local, eventos e iniciativas colaborativas.">Barcelona-based technical community and founding member of X-Ops Alliance, helping connect local talent, events and collaborative initiatives.</p>
         <div class="community-meta"><span>Barcelona</span><span data-en="Tech community" data-es="Comunidad técnica">Tech community</span></div>
+        <div class="related-event"><span data-en="Related conference" data-es="Conferencia vinculada">Related conference</span><a href="#conferences">HackBCN Conference</a></div>
         <a class="community-link" itemprop="url" href="https://hackbcn.org" target="_blank" rel="noopener noreferrer" aria-label="Visit HackBarcelona website" data-en="Visit website" data-es="Visitar web">Visit website</a>
       </article>
       <article class="community-card featured" itemprop="itemListElement" itemscope itemtype="https://schema.org/Organization">
-        <div class="community-top"><span class="community-avatar" aria-hidden="true">HD</span><span class="badge" data-en="Founding community" data-es="Comunidad fundadora">Founding community</span></div>
+        <div class="logo-frame"><img itemprop="logo" src="assets/community-hackerdreams.svg" alt="HackerDreams logo" loading="lazy" /></div>
+        <div class="community-top"><span class="badge" data-en="Founding community" data-es="Comunidad fundadora">Founding community</span></div>
         <h3 itemprop="name">HackerDreams</h3>
-        <p itemprop="description" data-en="Technical community and ecosystem facilitator contributing initial coordination, visibility and operational support to X-Ops Alliance." data-es="Comunidad técnica y facilitador del ecosistema que aporta coordinación inicial, visibilidad y soporte operativo a X-Ops Alliance.">Technical community and ecosystem facilitator contributing initial coordination, visibility and operational support to X-Ops Alliance.</p>
-        <div class="community-meta"><span>Madrid</span><span data-en="Ecosystem facilitator" data-es="Facilitador del ecosistema">Ecosystem facilitator</span></div>
+        <p itemprop="description" data-en="Technical community and initial ecosystem facilitator contributing coordination, visibility and operational support to X-Ops Alliance." data-es="Comunidad técnica y facilitador inicial del ecosistema que aporta coordinación, visibilidad y soporte operativo a X-Ops Alliance.">Technical community and initial ecosystem facilitator contributing coordination, visibility and operational support to X-Ops Alliance.</p>
+        <div class="community-meta"><span>Madrid</span><span data-en="Initial facilitator" data-es="Facilitador inicial">Initial facilitator</span></div>
+        <div class="related-event muted"><span data-en="Alliance role" data-es="Rol en la alianza">Alliance role</span><strong data-en="Facilitation, not ownership" data-es="Facilitación, no propiedad">Facilitation, not ownership</strong></div>
         <a class="community-link" itemprop="url" href="https://hackerdreams.org" target="_blank" rel="noopener noreferrer" aria-label="Visit HackerDreams website" data-en="Visit website" data-es="Visitar web">Visit website</a>
       </article>
-      <article class="community-card open-slot">
-        <div class="community-top"><span class="community-avatar" aria-hidden="true">+</span><span class="badge muted" data-en="Open slot" data-es="Espacio abierto">Open slot</span></div>
-        <h3 data-en="Your community can be next" data-es="Tu comunidad puede ser la siguiente">Your community can be next</h3>
-        <p data-en="If your community or conference wants to coordinate without losing autonomy, join the first alliance cycle." data-es="Si tu comunidad o conferencia quiere coordinarse sin perder autonomía, súmate al primer ciclo de la alianza.">If your community or conference wants to coordinate without losing autonomy, join the first alliance cycle.</p>
-        <div class="community-meta"><span data-en="Spain" data-es="España">Spain</span><span data-en="Community or conference" data-es="Comunidad o conferencia">Community or conference</span></div>
-        <a class="community-link" href="#join" data-en="Request to join" data-es="Solicitar unirse">Request to join</a>
+      <article class="community-card featured" itemprop="itemListElement" itemscope itemtype="https://schema.org/Organization">
+        <div class="logo-frame"><img itemprop="logo" src="assets/community-valkyrias.svg" alt="Valkyrias logo" loading="lazy" /></div>
+        <div class="community-top"><span class="badge" data-en="Founding community" data-es="Comunidad fundadora">Founding community</span></div>
+        <h3 itemprop="name">Valkyrias</h3>
+        <p itemprop="description" data-en="Transversal community connected to the X-Ops Alliance as a founding member, focused on participation, inclusion and technical community growth." data-es="Comunidad transversal conectada a X-Ops Alliance como miembro fundador, enfocada en participación, inclusión y crecimiento de comunidades técnicas.">Transversal community connected to the X-Ops Alliance as a founding member, focused on participation, inclusion and technical community growth.</p>
+        <div class="community-meta"><span data-en="Transversal" data-es="Transversal">Transversal</span><span data-en="Community growth" data-es="Crecimiento comunitario">Community growth</span></div>
+        <div class="related-event muted"><span data-en="Community focus" data-es="Foco comunitario">Community focus</span><strong data-en="Participation and inclusion" data-es="Participación e inclusión">Participation and inclusion</strong></div>
+        <a class="community-link disabled" href="#join" aria-disabled="true" data-en="Profile coming soon" data-es="Perfil próximamente">Profile coming soon</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="conferences" class="conferences" aria-labelledby="conferences-title">
+    <div class="section-head">
+      <p class="eyebrow" data-en="Conference partners" data-es="Conferencias partner">Conference partners</p>
+      <h2 id="conferences-title" data-en="Events connected to member communities." data-es="Eventos conectados a comunidades miembro.">Events connected to member communities.</h2>
+      <p data-en="Conference partners are shown with their related community so visitors can understand the ecosystem map at first glance." data-es="Las conferencias partner se muestran con su comunidad vinculada para que cualquier visitante entienda el mapa del ecosistema de un vistazo.">Conference partners are shown with their related community so visitors can understand the ecosystem map at first glance.</p>
+    </div>
+    <div class="relationship-board">
+      <article class="relationship-card" itemscope itemtype="https://schema.org/Event">
+        <div class="relationship-node community-node"><img src="assets/community-hackbarcelona.svg" alt="HackBarcelona logo" loading="lazy" /><span data-en="Community" data-es="Comunidad">Community</span><strong>HackBarcelona</strong></div>
+        <div class="connector-line" aria-hidden="true"><span></span></div>
+        <div class="relationship-node event-node"><span class="event-mark" aria-hidden="true">HC</span><span data-en="Conference" data-es="Conferencia">Conference</span><strong itemprop="name">HackBCN Conference</strong><p itemprop="description" data-en="Conference connected to HackBarcelona and listed as a X-Ops Alliance conference partner." data-es="Conferencia conectada a HackBarcelona y listada como conference partner de X-Ops Alliance.">Conference connected to HackBarcelona and listed as a X-Ops Alliance conference partner.</p><a itemprop="url" class="community-link" href="https://hackbcn.org" target="_blank" rel="noopener noreferrer" data-en="Visit conference" data-es="Visitar conferencia">Visit conference</a></div>
+      </article>
+      <article class="relationship-card open-relationship">
+        <div class="relationship-node community-node placeholder"><span class="event-mark" aria-hidden="true">+</span><span data-en="Next member" data-es="Siguiente miembro">Next member</span><strong data-en="Your community" data-es="Tu comunidad">Your community</strong></div>
+        <div class="connector-line" aria-hidden="true"><span></span></div>
+        <div class="relationship-node event-node placeholder"><span class="event-mark" aria-hidden="true">+</span><span data-en="Conference partner" data-es="Conferencia partner">Conference partner</span><strong data-en="Your event" data-es="Tu evento">Your event</strong><p data-en="Communities and conferences can join together or independently while keeping their own governance." data-es="Comunidades y conferencias pueden sumarse juntas o por separado, manteniendo su propia gobernanza.">Communities and conferences can join together or independently while keeping their own governance.</p><a class="community-link" href="#join" data-en="Start the process" data-es="Iniciar proceso">Start the process</a></div>
       </article>
     </div>
   </section>
@@ -110,13 +159,27 @@
     <div><p class="eyebrow" data-en="The operating model" data-es="El modelo operativo">The operating model</p><h2 data-en="A coordination layer, not a parent community." data-es="Una capa de coordinación, no una comunidad matriz.">A coordination layer, not a parent community.</h2><p data-en="The alliance is designed to be useful, lightweight and trustworthy. Communities sustain the network. Conferences amplify the network. A facilitation team keeps continuity, documentation and momentum." data-es="La alianza está diseñada para ser útil, ligera y confiable. Las comunidades sostienen la red. Las conferencias la amplifican. Un equipo facilitador mantiene continuidad, documentación e impulso.">The alliance is designed to be useful, lightweight and trustworthy. Communities sustain the network. Conferences amplify the network. A facilitation team keeps continuity, documentation and momentum.</p></div>
     <div class="model-list"><div><strong>01</strong><span data-en="Communities: active local or thematic nodes" data-es="Comunidades: nodos locales o temáticos activos">Communities: active local or thematic nodes</span></div><div><strong>02</strong><span data-en="Conferences: resonance and visibility partners" data-es="Conferencias: partners de resonancia y visibilidad">Conferences: resonance and visibility partners</span></div><div><strong>03</strong><span data-en="Initiatives: education, platforms and shared projects" data-es="Iniciativas: educación, plataformas y proyectos compartidos">Initiatives: education, platforms and shared projects</span></div></div>
   </section>
+
+  <section id="infrastructure" class="infrastructure" aria-labelledby="infrastructure-title">
+    <div class="section-head">
+      <p class="eyebrow" data-en="Optional ecosystem infrastructure" data-es="Infraestructura opcional del ecosistema">Optional ecosystem infrastructure</p>
+      <h2 id="infrastructure-title" data-en="The alliance connects. The infrastructure enables." data-es="La alianza conecta. La infraestructura habilita.">The alliance connects. The infrastructure enables.</h2>
+      <p data-en="X-Ops Alliance remains platform-neutral. The wider ecosystem is developing optional infrastructure to support identity, access, participation and coordination across communities and events. No member is required to use these tools." data-es="X-Ops Alliance se mantiene neutral respecto a plataformas. El ecosistema está desarrollando infraestructura opcional para apoyar identidad, acceso, participación y coordinación entre comunidades y eventos. Ningún miembro está obligado a usar estas herramientas.">X-Ops Alliance remains platform-neutral. The wider ecosystem is developing optional infrastructure to support identity, access, participation and coordination across communities and events. No member is required to use these tools.</p>
+    </div>
+    <div class="infra-grid">
+      <article class="infra-card"><span class="infra-icon" aria-hidden="true">AP</span><h3>AgoraPass</h3><p data-en="Optional digital identity and participation layer for communities and events: memberships, access, credentials and participation records." data-es="Capa opcional de identidad digital y participación para comunidades y eventos: membresías, accesos, credenciales y registros de participación.">Optional digital identity and participation layer for communities and events: memberships, access, credentials and participation records.</p><span class="status" data-en="Optional infrastructure" data-es="Infraestructura opcional">Optional infrastructure</span></article>
+      <article class="infra-card"><span class="infra-icon" aria-hidden="true">TG</span><h3>Triskell Gate</h3><p data-en="Optional secure onboarding and access gateway for trusted community ecosystems, protected resources and member journeys." data-es="Gateway opcional de onboarding y acceso seguro para ecosistemas comunitarios de confianza, recursos protegidos y recorridos de miembros.">Optional secure onboarding and access gateway for trusted community ecosystems, protected resources and member journeys.</p><span class="status" data-en="Optional infrastructure" data-es="Infraestructura opcional">Optional infrastructure</span></article>
+      <article class="infra-card neutral"><span class="infra-icon" aria-hidden="true">∞</span><h3 data-en="Open integration" data-es="Integración abierta">Open integration</h3><p data-en="Communities remain free to use their own tools. These layers support shared operations without replacing existing systems." data-es="Las comunidades son libres de usar sus propias herramientas. Estas capas apoyan operaciones compartidas sin sustituir sistemas existentes.">Communities remain free to use their own tools. These layers support shared operations without replacing existing systems.</p><span class="status" data-en="Platform-neutral" data-es="Neutral respecto a plataformas">Platform-neutral</span></article>
+    </div>
+  </section>
+
   <section class="principles">
     <h2 data-en="What this is not" data-es="Lo que esto no es">What this is not</h2>
     <div class="grid four"><p data-en="Not a vendor programme" data-es="No es un programa vendor">Not a vendor programme</p><p data-en="Not a commercial funnel" data-es="No es un embudo comercial">Not a commercial funnel</p><p data-en="Not a parent community" data-es="No es una comunidad matriz">Not a parent community</p><p data-en="Not a replacement for existing events" data-es="No reemplaza eventos existentes">Not a replacement for existing events</p></div>
   </section>
-  <section id="join" class="join"><h2 data-en="Help build the shared map of the ecosystem." data-es="Ayuda a construir el mapa compartido del ecosistema.">Help build the shared map of the ecosystem.</h2><p data-en="Founding communities and conference partners are invited to shape the first coordination cycle." data-es="Comunidades fundadoras y conference partners están invitados a dar forma al primer ciclo de coordinación.">Founding communities and conference partners are invited to shape the first coordination cycle.</p><a class="btn primary" href="mailto:info@xopsconference.com?subject=X-Ops%20Alliance%20-%20Founding%20Member" data-en="Start the conversation" data-es="Abrir conversación">Start the conversation</a></section>
+  <section id="join" class="join"><h2 data-en="Help build the shared map of the ecosystem." data-es="Ayuda a construir el mapa compartido del ecosistema.">Help build the shared map of the ecosystem.</h2><p data-en="Founding communities and conference partners are invited to shape the first coordination cycle." data-es="Comunidades fundadoras y conference partners están invitados a dar forma al primer ciclo de coordinación.">Founding communities and conference partners are invited to shape the first coordination cycle.</p><a class="btn primary" href="mailto:comunicaciones@hsm.foundation?subject=X-Ops%20Alliance%20-%20Founding%20Member" data-en="Start the conversation" data-es="Abrir conversación">Start the conversation</a></section>
 </main>
-<footer><span>X-Ops Alliance</span><span data-en="Coordinate without centralising." data-es="Coordinar sin centralizar.">Coordinate without centralising.</span></footer>
+<footer><span>X-Ops Alliance</span><span data-en="Independent ecosystem initiative initially facilitated by HackerDreams." data-es="Iniciativa independiente del ecosistema facilitada inicialmente por HackerDreams.">Independent ecosystem initiative initially facilitated by HackerDreams.</span><a href="mailto:comunicaciones@hsm.foundation">comunicaciones@hsm.foundation</a></footer>
 <script src="script.js"></script>
 </body>
 </html>
